@@ -1,4 +1,519 @@
-<!DOCTYPE html>
+<!-- Espacios públicos emblemáticos -->
+                    <!-- Mercado Alameda (Comuna 9) -->
+                    <rect class="special-space" x="285" y="330" width="35" height="25" rx="5"/>
+                    <text x="302" y="345" fill="#FF8C00" font-size="10" text-anchor="middle" font-weight="bold">Mercado</text>
+                    <text x="302" y="358" fill="#FF8C00" font-size="9" text-anchor="middle">Alameda</text>
+
+                    <!-- Museo La Tertulia (zona sur) -->
+                    <rect class="special-space" x="250" y="480" width="30" height="30" rx="8"/>
+                    <text x="265" y="498" fill="#9C27B0" font-size="9" text-anchor="middle" font-weight="bold">La Tertulia</text>
+
+                    <!-- Bulevar del Río (paralelo al río Cauca) -->
+                    <line x1="500" y1="300" x2="650" y2="350" stroke="#4CAF50" stroke-width="8" opacity="0.8"/>
+                    <text x="575" y="320" fill="#4CAF50" font-size="11" text-anchor="middle" font-weight="bold">Bulevar del Río</text>
+
+                    <!-- Universidad del Valle (zona sur-oriental) -->
+                    <rect class="special-space" x="450" y="480" width="60" height="40" rx="8"/>
+                    <text x="480" y="495" fill="#673AB7" font-size="10" text-anchor="middle" font-weight="bold">Universidad</text>
+                    <text x="480" y="508" fill="#673AB7" font-size="9" text-anchor="middle">del Valle</text>
+
+                    <!-- Loma de la Cruz (Comuna 20 - Siloé) -->
+                    <ellipse class="special-space" cx="50" cy="380" rx="35" ry="25"/>
+                    <text x="50" y="378" fill="#795548" font-size="9" text-anchor="middle" font-weight="bold">Loma de</text>
+                    <text x="50" y="390" fill="#795548" font-size="9" text-anchor="middle" font-weight="bold">la Cruz</text>
+
+                    <!-- MANIFESTACIONES CULTURALES VISIBLES EN UBICACIONES EXACTAS -->
+                    
+                    <!-- Salsa Caleña - Barrio Obrero (Comuna 9) -->
+                    <g class="cultural-marker">
+                        <circle cx="300" cy="350" r="12" fill="#FF6B35" stroke="#D84315" stroke-width="3"/>
+                        <text x="300" y="355" text-anchor="middle" fill="white" font-size="10" font-weight="bold">🎵</text>
+                        <rect x="240" y="370" width="120" height="25" rx="12" fill="rgba(255,107,53,0.9)" stroke="#D84315"/>
+                        <text x="300" y="385" text-anchor="middle" fill="white" font-size="11" font-weight="bold">SALSA CALEÑA</text>
+                    </g>
+
+                    <!-- Salsa Caleña - Juanchito (Corregimiento al sur) -->
+                    <g class="cultural-marker">
+                        <circle cx="600" cy="550" r="12" fill="#FF6B35" stroke="#D84315" stroke-width="3"/>
+                        <text x="600" y="555" text-anchor="middle" fill="white" font-size="10" font-weight="bold">🎵</text>
+                        <rect x="550" y="570" width="100" height="25" rx="12" fill="rgba(255,107,53,0.9)" stroke="#D84315"/>
+                        <text x="600" y="585" text-anchor="middle" fill="white" font-size="11" font-weight="bold">JUANCHITO</text>
+                    </g>
+
+                    <!-- Gastronomía - Mercado Alameda (Comuna 9) -->
+                    <g class="cultural-marker">
+                        <circle cx="302" cy="345" r="12" fill="#4CAF50" stroke="#2E7D32" stroke-width="3"/>
+                        <text x="302" y="350" text-anchor="middle" fill="white" font-size="10" font-weight="bold">🍲</text>
+                        <rect x="245" y="305" width="114" height="25" rx="12" fill="rgba(76,175,80,0.9)" stroke="#2E7D32"/>
+                        <text x="302" y="320" text-anchor="middle" fill="white" font-size="10" font-weight="bold">GASTRONOMÍA</text>
+                    </g>
+
+                    <!-- Artesanías - Loma de la Cruz (Siloé - Comuna 20) -->
+                    <g class="cultural-marker">
+                        <circle cx="50" cy="380" r="12" fill="#9C27B0" stroke="#6A1B9A" stroke-width="3"/>
+                        <text x="50" y="385" text-anchor="middle" fill="white" font-size="10" font-weight="bold">🎨</text>
+                        <rect x="5" y="400" width="90" height="25" rx="12" fill="rgba(156,39,176,0.9)" stroke="#6A1B9A"/>
+                        <text x="50" y="415" text-anchor="middle" fill="white" font-size="9" font-weight="bold">ARTESANÍAS</text>
+                    </g>
+
+                    <!-- Artesanías Afropacíficas - Distrito Aguablanca (Comuna 13) -->
+                    <g class="cultural-marker">
+                        <circle cx="710" cy="440" r="12" fill="#9C27B0" stroke="#6A1B9A" stroke-width="3"/>
+                        <text x="710" y="445" text-anchor="middle" fill="white" font-size="10" font-weight="bold">🎨</text>
+                        <rect x="635" y="460" width="150" height="25" rx="12" fill="rgba(156,39,176,0.9)" stroke="#6A1B9A"/>
+                        <text x="710" y="475" text-anchor="middle" fill="white" font-size="9" font-weight="bold">ARTESANÍAS PACÍFICO</text>
+                    </g>
+
+                    <!-- Murales de Resistencia - Puerto Resistencia (Av. Simón Bolívar) -->
+                    <g class="cultural-marker">
+                        <circle cx="500" cy="420" r="14" fill="#E91E63" stroke="#AD1457" stroke-width="3"/>
+                        <text x="500" y="425" text-anchor="middle" fill="white" font-size="12" font-weight="bold">✊</text>
+                        <rect x="420" y="445" width="160" height="25" rx="12" fill="rgba(233,30,99,0.95)" stroke="#AD1457"/>
+                        <text x="500" y="460" text-anchor="middle" fill="white" font-size="10" font-weight="bold">MURALES RESISTENCIA</text>
+                    </g>
+
+                    <!-- Murales de Resistencia - Siloé (Comuna 20) -->
+                    <g class="cultural-marker">
+                        <circle cx="80" cy="320" r="12" fill="#E91E63" stroke="#AD1457" stroke-width="3"/>
+                        <text x="80" y="325" text-anchor="middle" fill="white" font-size="10" font-weight="bold">🎨</text>
+                        <rect x="25" y="290" width="110" height="25" rx="12" fill="rgba(233,30,99,0.9)" stroke="#AD1457"/>
+                        <text x="80" y="305" text-anchor="middle" fill="white" font-size="10" font-weight="bold">ARTE URBANO</text>
+                    </g>
+
+                    <!-- Festividades Religiosas - San Antonio (Comuna 1) -->
+                    <g class="cultural-marker">
+                        <circle cx="350" cy="250" r="12" fill="#FF9800" stroke="#F57C00" stroke-width="3"/>
+                        <text x="350" y="255" text-anchor="middle" fill="white" font-size="10" font-weight="bold">⛪</text>
+                        <rect x="275" y="220" width="150" height="25" rx="12" fill="rgba(255,152,0,0.9)" stroke="#F57C00"/>
+                        <text x="350" y="235" text-anchor="middle" fill="white" font-size="10" font-weight="bold">FIESTAS RELIGIOSAS</text>
+                    </g>
+
+                    <!-- Feria de Cali - Universidad del Valle -->
+                    <g class="cultural-marker">
+                        <circle cx="480" cy="500" r="12" fill="#F44336" stroke="#C62828" stroke-width="3"/>
+                        <text x="480" y="505" text-anchor="middle" fill="white" font-size="10" font-weight="bold">🎉</text>
+                        <rect x="425" y="520" width="110" height="25" rx="12" fill="rgba(244,67,54,0.9)" stroke="#C62828"/>
+                        <text x="480" y="535" text-anchor="middle" fill="white" font-size="10" font-weight="bold">FERIA DE CALI</text>
+                    </g>
+
+                    <!-- PORTADORES DEL SABER EN UBICACIONES EXACTAS -->
+
+                    <!-- Músicos Salseros - Barrio Obrero -->
+                    <g class="actor-marker">
+                        <rect x="320" y="360" width="16" height="16" rx="3" fill="#2196F3" stroke="#1565C0" stroke-width="2"/>
+                        <text x="328" y="370" text-anchor="middle" fill="white" font-size="8" font-weight="bold">♪</text>
+                        <text x="328" y="385" text-anchor="middle" fill="#1565C0" font-size="8" font-weight="bold">Músicos</text>
+                    </g>
+
+                    <!-- Cocineras - Mercado Alameda -->
+                    <g class="actor-marker">
+                        <rect x="320" y="340" width="16" height="16" rx="3" fill="#2196F3" stroke="#1565C0" stroke-width="2"/>
+                        <text x="328" y="350" text-anchor="middle" fill="white" font-size="8" font-weight="bold">👩</text>
+                        <text x="328" y="365" text-anchor="middle" fill="#1565C0" font-size="8" font-weight="bold">Cocineras</text>
+                    </g>
+
+                    <!-- Artistas Urbanos - Puerto Resistencia -->
+                    <g class="actor-marker">
+                        <rect x="520" y="430" width="16" height="16" rx="3" fill="#2196F3" stroke="#1565C0" stroke-width="2"/>
+                        <text x="528" y="440" text-anchor="middle" fill="white" font-size="8" font-weight="bold">🎨</text>
+                        <text x="528" y="455" text-anchor="middle" fill="#1565C0" font-size="8" font-weight="bold">Artistas</text>
+                    </g>
+
+                    <!-- Sabedores Afropacíficos - Distrito Aguablanca -->
+                    <g class="actor-marker">
+                        <rect x="730" y="450" width="16" height="16" rx="3" fill="#2196F3" stroke="#1565C0" stroke-width="2"/>
+                        <text x="738" y="460" text-anchor="middle" fill="white" font-size="8" font-weight="bold">🌿</text>
+                        <text x="738" y="475" text-anchor="middle" fill="#1565C0" font-size="8" font-weight="bold">Sabedores</text>
+                    </g>
+
+                    <!-- Líderes Comunitarios - Siloé -->
+                    <g class="actor-marker">
+                        <rect x="100" y="330" width="16" height="16" rx="3" fill="#2196F3" stroke="#1565C0" stroke-width="2"/>
+                        <text x="108" y="340" text-anchor="middle" fill="white" font-size="8" font-weight="bold">✊</text>
+                        <text x="108" y="355" text-anchor="middle" fill="#1565C0" font-size="8" font-weight="bold">Líderes</text>
+                    </g>
+
+                    <!-- AMENAZAS EN UBICACIONES ESPECÍFICAS -->
+
+                    <!-- Gentrificación - San Antonio (Centro Histórico) -->
+                    <g class="threat-marker">
+                        <polygon points="330,250 320,265 340,265" fill="#FF5722" stroke="#D84315" stroke-width="2"/>
+                        <text x="330" y="260" text-anchor="middle" fill="white" font-size="8" font-weight="bold">⚠️</text>
+                        <text x="330" y="280" text-anchor="middle" fill="#D84315" font-size="8" font-weight="bold">Gentrificación</text>
+                    </g>
+
+                    <!-- Estigmatización - Puerto Resistencia -->
+                    <g class="threat-marker">
+                        <polygon points="520,410 510,425 530,425" fill="#FF5722" stroke="#D84315" stroke-width="2"/>
+                        <text x="520" y="420" text-anchor="middle" fill="white" font-size="8" font-weight="bold">🚫</text>
+                        <text x="520" y="440" text-anchor="middle" fill="#D84315" font-size="8" font-weight="bold">Estigma</text>
+                    </g>
+
+                    <!-- Violencia Urbana - Distrito Aguablanca -->
+                    <g class="threat-marker">
+                        <polygon points="690,460 680,475 700,475" fill="#FF5722" stroke="#D84315" stroke-width="2"/>
+                        <text x="690" y="470" text-anchor="middle" fill="white" font-size="8" font-weight="bold">💥</text>
+                        <text x="690" y="490" text-anchor="middle" fill="#D84315" font-size="8" font-weight="bold">Violencia</text>
+                    </g>
+
+                    <!-- Pérdida Generacional - Barrio Obrero -->
+                    <g class="threat-marker">
+                        <polygon points="280,360 270,375 290,375" fill="#FF5722" stroke="#D84315" stroke-width="2"/>
+                        <text x="280" y="370" text-anchor="middle" fill="white" font-size="8" font-weight="bold">📱</text>
+                        <text x="280" y="390" text-anchor="middle" fill="#D84315" font-size="7" font-weight="bold">Pérdida Gen.</text>
+                    </g>
+
+                    <!-- Estigmatización - Siloé -->
+                    <g class="threat-marker">
+                        <polygon points="60,340 50,355 70,355" fill="#FF5722" stroke="#D84315" stroke-width="2"/>
+                        <text x="60" y="350" text-anchor="middle" fill="white" font-size="8" font-weight="bold">🚫</text>
+                        <text x="60" y="370" text-anchor="middle" fill="#D84315" font-size="7" font-weight="bold">Estigma</text>
+                    </g>
+
+                    <!-- ESPACIOS DE MEMORIA -->
+
+                    <!-- Puerto Resistencia (destacado especial en ubicación exacta) -->
+                    <g class="memory-marker">
+                        <polygon points="500,400 515,410 515,425 500,435 485,425 485,410" fill="#FFD700" stroke="#FFA000" stroke-width="3"/>
+                        <text x="500" y="420" text-anchor="middle" fill="#E65100" font-size="12" font-weight="bold">🏛️</text>
+                        <rect x="430" y="375" width="140" height="20" rx="10" fill="rgba(255,215,0,0.95)" stroke="#FFA000"/>
+                        <text x="500" y="388" text-anchor="middle" fill="#E65100" font-size="9" font-weight="bold">ESPACIO DE MEMORIA 2021</text>
+                    </g>
+
+                    <!-- Conexiones culturales actualizadas -->
+                    <g id="culturalConnections" opacity="0.6">
+                        <!-- Conexión salsa: Barrio Obrero - Juanchito -->
+                        <line x1="300" y1="350" x2="600" y2="550" stroke="#FF6B35" stroke-width="3" stroke-dasharray="8,4"/>
+                        <text x="450" y="450" text-anchor="middle" fill="#FF6B35" font-size="9" transform="rotate(35 450 450)">Ruta Histórica de la Salsa</text>
+
+                        <!-- Conexión artesanías: Loma de la Cruz - Distrito Aguablanca -->
+                        <line x1="50" y1="380" x2="710" y2="440" stroke="#9C27B0" stroke-width="3" stroke-dasharray="8,4"/>
+                        <text x="380" y="410" text-anchor="middle" fill="#9C27B0" font-size="9">Red Artesanal Afropacífica</text>
+
+                        <!-- Conexión resistencia: Siloé - Puerto Resistencia -->
+                        <line x1="80" y1="350" x2="500" y2="420" stroke="#E91E63" stroke-width="3" stroke-dasharray="8,4"/>
+                        <text x="290" y="385" text-anchor="middle" fill="#E91E63" font-size="9">Territorios de Resistencia</text>
+
+                        <!-- Conexión gastronómica: Mercado Alameda - centro -->
+                        <line x1="302" y1="345" x2="350" y2="250" stroke="#4CAF50" stroke-width="3" stroke-dasharray="8,4"/>
+                        <text x="326" y="298" text-anchor="middle" fill="#4CAF50" font-size="9">Patrimonio Culinario</text>
+                    </g>        // Eventos para marcadores culturales visibles en el mapa
+        document.addEventListener('DOMContentLoaded', function() {
+            // Eventos para manifestaciones culturales
+            const culturalMarkers = document.querySelectorAll('.cultural-marker');
+            culturalMarkers.forEach(marker => {
+                marker.addEventListener('click', function() {
+                    const circles = this.querySelectorAll('circle');
+                    const texts = this.querySelectorAll('text');
+                    if (circles.length > 0 && texts.length > 0) {
+                        const manifestationName = texts[1].textContent;
+                        let info = '';
+                        
+                        switch(manifestationName) {
+                            case 'SALSA CALEÑA':
+                                info = '🎵 SALSA CALEÑA\n\n📍 Manifestación cultural emblemática de Cali\n📋 Clasificación: Artes - Música y Danza\n🏘️ Ubicación: Barrio Obrero y Juanchito\n\n🎶 La salsa caleña es reconocida mundialmente por su estilo único, rapidez y destreza en el baile. Surgió en los años 60-70 y se convirtió en símbolo de identidad caleña.\n\n⚠️ Riesgo: Pérdida de espacios tradicionales de práctica y desinterés de nuevas generaciones.';
+                                break;
+                            case 'JUANCHITO':
+                                info = '🎵 JUANCHITO SALSERO\n\n📍 Cuna histórica de la salsa caleña\n📋 Clasificación: Artes - Música y Danza\n🏘️ Ubicación: Corregimiento al sur de Cali\n\n🎶 Juanchito fue el epicentro de la salsa en los años 70-80, donde se presentaron las grandes orquestas y se formaron generaciones de salseros.\n\n⚠️ Riesgo: Comercialización excesiva y pérdida del ambiente tradicional.';
+                                break;
+                            case 'GASTRONOMÍA':
+                                info = '🍲 GASTRONOMÍA VALLECAUCANA\n\n📍 Tradiciones culinarias del Valle del Cauca\n📋 Clasificación: Cultura culinaria\n🏘️ Ubicación: Mercado Alameda (principal)\n\n🥘 Incluye sancocho de gallina, aborrajados, chuleta valluna, lulada, champús. Patrimonio gastronómico transmitido por generaciones.\n\n⚠️ Riesgo: Homogenización alimentaria global y pérdida de técnicas tradicionales.';
+                                break;
+                            case 'ARTESANÍAS':
+                                info = '🎨 ARTESANÍAS TRADICIONALES\n\n📍 Técnicas ancestrales de comunidades\n📋 Clasificación: Producción tradicional y propia\n🏘️ Ubicación: Loma de la Cruz\n\n🪴 Incluye tejidos, cestería, talla en madera, trabajos en guadua. Saberes transmitidos por comunidades indígenas y afrodescendientes.\n\n⚠️ Riesgo: Competencia de productos industriales y pérdida de técnicas ancestrales.';
+                                break;
+                            case 'ARTESANÍAS PACÍFICO':
+                                info = '🎨 ARTESANÍAS AFROPACÍFICAS\n\n📍 Tradiciones del Pacífico colombiano\n📋 Clasificación: Producción tradicional y propia\n🏘️ Ubicación: Distrito de Aguablanca\n\n🌿 Técnicas traídas por comunidades afrodescendientes del Pacífico: tejido de werregue, talla en coco, cestería en chocolatillo.\n\n⚠️ Riesgo: Falta de mercados y reconocimiento del valor cultural.';
+                                break;
+                            case 'MURALES RESISTENCIA':
+                                info = '✊ MURALES DE RESISTENCIA\n\n📍 Arte urbano post-estallido social 2021\n📋 Clasificación: PCI asociado a espacios culturales\n🏘️ Ubicación: Puerto Resistencia\n\n🎨 Manifestación artística surgida durante el estallido social de 2021. Murales comunitarios que expresan resistencia, memoria y reivindicación social.\n\n⚠️ Riesgo: Borrado institucional y estigmatización del territorio.';
+                                break;
+                            case 'ARTE URBANO':
+                                info = '🎨 ARTE URBANO COMUNITARIO\n\n📍 Expresiones artísticas populares\n📋 Clasificación: PCI asociado a espacios culturales\n🏘️ Ubicación: Siloé\n\n🏘️ Arte mural y grafiti comunitario que expresa identidad territorial, resistencia y memoria colectiva de los barrios populares.\n\n⚠️ Riesgo: Criminalización y falta de reconocimiento como patrimonio cultural.';
+                                break;
+                            case 'FIESTAS RELIGIOSAS':
+                                info = '⛪ FESTIVIDADES RELIGIOSAS\n\n📍 Celebraciones tradicionales católicas\n📋 Clasificación: Eventos religiosos tradicionales de carácter colectivo\n🏘️ Ubicación: San Antonio (centro histórico)\n\n🙏 Incluye Semana Santa, fiestas patronales, procesiones. Sincretismo entre tradiciones católicas, indígenas y afrodescendientes.\n\n⚠️ Riesgo: Secularización urbana y pérdida de participación comunitaria.';
+                                break;
+                            case 'FERIA DE CALI':
+                                info = '🎉 FERIA DE CALI\n\n📍 Máxima expresión festiva caleña\n📋 Clasificación: Actos festivos y lúdicos\n🏘️ Ubicación: Toda la ciudad (diciembre-enero)\n\n🎊 Celebración anual que incluye salsa, cabalgata, corridas de toros, conciertos. Creada en 1957 para levantar el ánimo tras la tragedia de 1956.\n\n⚠️ Riesgo: Comercialización excesiva y pérdida del carácter popular.';
+                                break;
+                        }
+                        alert(info);
+                    }
+                });
+            }
+
+            // Función para mostrar/ocultar conexiones culturales
+            const connectionsGroup = document.getElementById('culturalConnections');
+            let connectionsVisible = true;
+            
+            const toggleConnectionsButton = document.createElement('button');
+            toggleConnectionsButton.innerHTML = '🔗 Ocultar Conexiones';
+            toggleConnectionsButton.style.cssText = `
+                width: 100%;
+                padding: 12px;
+                background: linear-gradient(135deg, #FF9800, #F57C00);
+                color: white;
+                border: none;
+                border-radius: 10px;
+                font-size: 13px;
+                font-weight: bold;
+                cursor: pointer;
+                margin-top: 15px;
+                transition: all 0.3s ease;
+                box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+            `;
+            
+            toggleConnectionsButton.addEventListener('click', function() {
+                if (connectionsVisible) {
+                    connectionsGroup.style.opacity = '0';
+                    this.innerHTML = '🔗 Mostrar Conexiones';
+                    this.style.background = 'linear-gradient(135deg, #9E9E9E, #616161)';
+                } else {
+                    connectionsGroup.style.opacity = '0.6';
+                    this.innerHTML = '🔗 Ocultar Conexiones';
+                    this.style.background = 'linear-gradient(135deg, #FF9800, #F57C00)';
+                }
+                connectionsVisible = !connectionsVisible;
+            });
+
+            // Botón para mostrar toda la información cultural
+            const showAllInfoButton = document.createElement('button');
+            showAllInfoButton.innerHTML = '📊 Ver Resumen Cultural Completo';
+            showAllInfoButton.style.cssText = `
+                width: 100%;
+                padding: 15px;
+                background: linear-gradient(135deg, #673AB7, #512DA8);
+                color: white;
+                border: none;
+                border-radius: 12px;
+                font-size: 14px;
+                font-weight: bold;
+                cursor: pointer;
+                margin-top: 15px;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            `;
+            
+            showAllInfoButton.addEventListener('click', function() {
+                alert(`🎭 CARTOGRAFÍA CULTURAL DE CALI - RESUMEN COMPLETO\n\n📊 MANIFESTACIONES IDENTIFICADAS:\n• 6 manifestaciones culturales principales\n• 5 tipos de portadores del saber\n• 4 amenazas territoriales específicas\n• 1 espacio de memoria destacado (Puerto Resistencia)\n\n🗺️ DISTRIBUCIÓN TERRITORIAL:\n• 22 comunas urbanas mapeadas\n• Conexiones entre territorios culturales\n• Elementos geográficos estructurantes\n\n📋 CLASIFICACIÓN MINISTERIAL:\n• Artes (Salsa Caleña)\n• Cultura culinaria (Gastronomía)\n• Producción tradicional (Artesanías)\n• PCI espacios culturales (Murales)\n• Eventos religiosos (Festividades)\n• Actos festivos (Feria de Cali)\n\n⚠️ PRINCIPALES RIESGOS:\n• Gentrificación en centros históricos\n• Estigmatización de territorios populares\n• Pérdida generacional de tradiciones\n• Violencia urbana en espacios culturales\n\n🌟 PUERTO RESISTENCIA:\nEpicenter de nueva memoria cultural post-2021, símbolo de resistencia y organización comunitaria.\n\n📍 Esta cartografía documenta manifestaciones vivas que definen la identidad cultural caleña entre tradición y contemporaneidad.`);
+            });
+
+            // Agregar botones al panel de control
+            const controlsPanel = document.querySelector('.controls-panel');
+            controlsPanel.appendChild(toggleConnectionsButton);
+            controlsPanel.appendChild(showAllInfoButton);
+
+            // Remover la función addAllCulturalElements ya que ahora los elementos están en el HTML
+            // addAllCulturalElements();
+
+            // Mantener eventos para elementos del panel
+            const manifestationItems = document.querySelectorAll('.manifestation-item');
+            manifestationItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const type = this.getAttribute('data-type');
+                    
+                    manifestationItems.forEach(el => el.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    if (type) {
+                        highlightElementsByType(type);
+                    }
+                });
+            });
+
+            // Eventos para barrios/comunas
+            const neighborhoods = document.querySelectorAll('.neighborhood');
+            neighborhoods.forEach(neighborhood => {
+                neighborhood.addEventListener('click', function() {
+                    const name = this.getAttribute('data-name');
+                    const comuna = this.getAttribute('data-comuna');
+                    
+                    let description = '';
+                    let culturalElements = '';
+                    
+                    switch(comuna) {
+                        case '1':
+                            description = 'Centro histórico de Cali, concentra patrimonio arquitectónico y religioso';
+                            culturalElements = '⛪ Festividades religiosas tradicionales\n🏛️ Iglesia La Merced, San Antonio';
+                            break;
+                        case '2':
+                            description = 'Cuna de la salsa caleña, tradición musical y cultural obrera';
+                            culturalElements = '🎵 Músicos salseros tradicionales\n📱 En riesgo por pérdida generacional';
+                            break;
+                        case '10':
+                        case '11':
+                        case '16':
+                            description = 'Territorio donde converge Puerto Resistencia';
+                            culturalElements = '✊ Monumento a la Resistencia (2021)\n🎨 Murales comunitarios\n👥 Líderes sociales';
+                            break;
+                        case '13':
+                        case '14':
+                        case '15':
+                        case '21':
+                            description = 'Distrito de Aguablanca, concentración de población afrodescendiente del Pacífico';
+                            culturalElements = '🎨 Artesanías afropacíficas\n🌿 Sabedores tradicionales\n💥 Afectado por violencia urbana';
+                            break;
+                        case '20':
+                            description = 'Territorio de ladera, resistencia popular y cultura comunitaria';
+                            culturalElements = '🎨 Arte urbano comunitario\n✊ Líderes comunitarios\n🏘️ Territorio de resistencia';
+                            break;
+                        default:
+                            description = 'Territorio con manifestaciones culturales propias de Cali';
+                            culturalElements = '🎭 Diversas expresiones culturales caleñas';
+                    }
+                    
+                    alert(`${name}\n\n📍 ${description}\n\n🎭 ELEMENTOS CULTURALES:\n${culturalElements}\n\n🏛️ Parte integral del ecosistema cultural que define la identidad caleña entre la tradición ancestral y las expresiones contemporáneas.`);
+                });
+            });
+
+            // Botón para limpiar filtros (mantener funcionalidad existente)
+            const clearButton = document.createElement('button');
+            clearButton.innerHTML = '🔄 Limpiar Todos los Filtros';
+            clearButton.style.cssText = `
+                width: 100%;
+                padding: 15px;
+                background: linear-gradient(135deg, #2E8B57, #228B22);
+                color: white;
+                border: none;
+                border-radius: 12px;
+                font-size: 14px;
+                font-weight: bold;
+                cursor: pointer;
+                margin-top: 20px;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            `;
+            
+            clearButton.addEventListener('click', clearAllFilters);
+            clearButton.addEventListener('mouseover', function() {
+                this.style.background = 'linear-gradient(135deg, #32CD32, #228B22)';
+                this.style.transform = 'scale(1.05)';
+            });
+            clearButton.addEventListener('mouseout', function() {
+                this.style.background = 'linear-gradient(135deg, #2E8B57, #228B22)';
+                this.style.transform = 'scale(1)';
+            });
+            
+            controlsPanel.appendChild(clearButton);
+        });
+
+        // Función para resaltar elementos en el mapa por tipo
+        function highlightElementsByType(type) {
+            // Resetear todos los elementos
+            const allMarkers = document.querySelectorAll('.cultural-marker, .actor-marker, .threat-marker, .memory-marker');
+            allMarkers.forEach(marker => {
+                marker.style.opacity = '0.3';
+                marker.style.transform = 'scale(0.8)';
+            });
+
+            // Resaltar elementos del tipo seleccionado
+            let targetClass = '';
+            switch(type) {
+                case 'manifestation':
+                    targetClass = '.cultural-marker';
+                    break;
+                case 'actor':
+                    targetClass = '.actor-marker';
+                    break;
+                case 'threat':
+                    targetClass = '.threat-marker';
+                    break;
+                case 'space':
+                    targetClass = '.memory-marker';
+                    break;
+            }
+
+            if (targetClass) {
+                const targetMarkers = document.querySelectorAll(targetClass);
+                targetMarkers.forEach(marker => {
+                    marker.style.opacity = '1';
+                    marker.style.transform = 'scale(1.2)';
+                    marker.style.filter = 'drop-shadow(0 0 15px #FFD700)';
+                });
+            }
+        }
+
+        // Función para limpiar todos los filtros
+        function clearAllFilters() {
+            const allMarkers = document.querySelectorAll('.cultural-marker, .actor-marker, .threat-marker, .memory-marker');
+            allMarkers.forEach(marker => {
+                marker.style.opacity = '1';
+                marker.style.transform = 'scale(1)';
+                marker.style.filter = '';
+            });
+
+            const items = document.querySelectorAll('.manifestation-item');
+            items.forEach(item => {
+                item.classList.remove('active');
+            });
+        }
+            });
+
+            // Eventos para portadores del saber
+            const actorMarkers = document.querySelectorAll('.actor-marker');
+            actorMarkers.forEach(marker => {
+                marker.addEventListener('click', function() {
+                    const texts = this.querySelectorAll('text');
+                    if (texts.length > 0) {
+                        const actorType = texts[1].textContent;
+                        let info = '';
+                        
+                        switch(actorType) {
+                            case 'Músicos':
+                                info = '♪ MÚSICOS SALSEROS\n\n👥 Portadores del saber musical caleño\n📍 Barrio Obrero, Juanchito\n\n🎼 Guardianes de la tradición salsera: cantantes, instrumentistas, compositores, directores de orquesta que han preservado y transmitido el estilo único de la salsa caleña.\n\n🎯 Rol: Enseñanza, creación, interpretación y preservación del patrimonio musical.';
+                                break;
+                            case 'Cocineras':
+                                info = '👩 COCINERAS TRADICIONALES\n\n👥 Preservadoras de sabores ancestrales\n📍 Mercado Alameda, plazas de mercado\n\n🍲 Mujeres que guardan las recetas y técnicas culinarias vallecaucanas transmitidas por generaciones. Conocen ingredientes, preparaciones y rituales alimentarios.\n\n🎯 Rol: Transmisión de conocimientos gastronómicos y preservación de la identidad culinaria.';
+                                break;
+                            case 'Artistas':
+                                info = '🎨 ARTISTAS URBANOS\n\n👥 Creadores de nuevas expresiones culturales\n📍 Puerto Resistencia, territorios populares\n\n✊ Jóvenes artistas que emergieron durante el estallido social de 2021, creando murales, grafitis y expresiones que reflejan la realidad social contemporánea.\n\n🎯 Rol: Creación de nuevos lenguajes artísticos y documentación de la memoria reciente.';
+                                break;
+                            case 'Sabedores':
+                                info = '🌿 SABEDORES AFROPACÍFICOS\n\n👥 Portadores de conocimientos ancestrales\n📍 Distrito de Aguablanca\n\n🌍 Personas de comunidades afrodescendientes del Pacífico que conservan conocimientos sobre medicina tradicional, plantas, rituales, música y tradiciones orales.\n\n🎯 Rol: Preservación de cosmovisiones ancestrales y transmisión de saberes tradicionales.';
+                                break;
+                            case 'Líderes':
+                                info = '✊ LÍDERES COMUNITARIOS\n\n👥 Organizadores sociales y culturales\n📍 Siloé, Puerto Resistencia, Aguablanca\n\n🏘️ Personas que articulan procesos comunitarios, defienden los territorios y promueven manifestaciones culturales como herramientas de resistencia y cohesión social.\n\n🎯 Rol: Organización comunitaria, defensa territorial y promoción cultural.';
+                                break;
+                        }
+                        alert(info);
+                    }
+                });
+            });
+
+            // Eventos para amenazas
+            const threatMarkers = document.querySelectorAll('.threat-marker');
+            threatMarkers.forEach(marker => {
+                marker.addEventListener('click', function() {
+                    const texts = this.querySelectorAll('text');
+                    if (texts.length > 0) {
+                        const threatType = texts[1].textContent;
+                        let info = '';
+                        
+                        switch(threatType) {
+                            case 'Gentrificación':
+                                info = '⚠️ GENTRIFICACIÓN\n\n🏗️ Desplazamiento por desarrollo urbano\n📍 San Antonio, centros históricos\n\n💰 Proceso de transformación urbana que incrementa el valor del suelo, desplaza a comunidades tradicionales y transforma las dinámicas culturales de los barrios.\n\n📉 Impacto: Pérdida de espacios culturales tradicionales y desarraigo comunitario.';
+                                break;
+                            case 'Estigma':
+                                info = '🚫 ESTIGMATIZACIÓN TERRITORIAL\n\n📍 Criminalización de espacios culturales\n🏘️ Puerto Resistencia, Siloé, Aguablanca\n\n⚖️ Proceso de señalamiento y criminalización de territorios populares que afecta las manifestaciones culturales y limita el acceso a derechos culturales.\n\n📉 Impacto: Limitación de expresiones culturales y autoestigma comunitario.';
+                                break;
+                            case 'Violencia':
+                                info = '💥 VIOLENCIA URBANA\n\n🔫 Afectación de espacios culturales\n📍 Aguablanca, territorios periféricos\n\n⚔️ Dinámicas de violencia armada, territorial y social que restringen las prácticas culturales, limitan la movilidad y afectan la cohesión comunitaria.\n\n📉 Impacto: Reducción de espacios seguros para la práctica cultural.';
+                                break;
+                            case 'Pérdida Gen.':
+                                info = '📱 PÉRDIDA GENERACIONAL\n\n👨‍👩‍👧‍👦 Desinterés de nuevas generaciones\n📍 Territorios tradicionales\n\n📲 Fenómeno de desconexión entre jóvenes y tradiciones culturales, influenciado por globalización, tecnología y falta de espacios de transmisión cultural.\n\n📉 Impacto: Interrupción de la cadena de transmisión cultural.';
+                                break;
+                        }
+                        alert(info);
+                    }
+                });
+            });
+
+            // Evento especial para Puerto Resistencia
+            const memoryMarker = document.querySelector('.memory-marker');
+            if (memoryMarker) {
+                memoryMarker.addEventListener('click', function() {
+                    alert('🏛️ PUERTO RESISTENCIA - ESPACIO DE MEMORIA\n\n📍 Intersección Comunas 10, 11 y 16\n🗺️ Avenida Simón Bolívar\n📅 Resignificado: Estallido Social 2021\n\n✊ Durante 16 días del estallido social de 2021, este espacio se transformó de "Puerto Rellena" en "Puerto Resistencia". La comunidad construyó colectivamente un monumento que simboliza la resistencia, la memoria y la organización popular.\n\n🎨 MONUMENTO A LA RESISTENCIA:\n• Construcción colectiva de 200+ personas\n• 25+ artistas de colectivos independientes\n• Símbolo de unión y resistencia social\n• En proceso de declaratoria como BIC\n\n📜 ACTIVIDADES CULTURALES:\n• Ollas comunitarias\n• Misión médica\n• Performances y arte circense\n• Foros de derechos humanos\n• Actividades deportivas\n\n⚖️ RECONOCIMIENTO OFICIAL:\n• Licencia de intervención del espacio público (2021)\n• Expediente para Bien de Interés Cultural Nacional\n• Apoyo del Ministerio de Cultura\n\n🌟 "Un antimonumento y figura cambiante que representa la visión colectiva de resistencia de múltiples comunidades de Colombia"');<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -304,14 +819,53 @@
             }
         }
 
-        .puerto-resistencia {
-            animation: pulse 2s infinite;
+        .cultural-marker {
+            cursor: pointer;
+            transition: all 0.3s ease;
         }
 
-        @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.6; }
-            100% { opacity: 1; }
+        .cultural-marker:hover {
+            transform: scale(1.2);
+            filter: drop-shadow(0 0 15px rgba(255,215,0,0.8));
+        }
+
+        .actor-marker {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .actor-marker:hover {
+            transform: scale(1.3);
+            filter: drop-shadow(0 0 10px rgba(33,150,243,0.8));
+        }
+
+        .threat-marker {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .threat-marker:hover {
+            transform: scale(1.3);
+            filter: drop-shadow(0 0 10px rgba(255,87,34,0.8));
+        }
+
+        .memory-marker {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            animation: memoryglow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes memoryglow {
+            from { filter: drop-shadow(0 0 5px rgba(255,215,0,0.5)); }
+            to { filter: drop-shadow(0 0 20px rgba(255,215,0,1)); }
+        }
+
+        .memory-marker:hover {
+            transform: scale(1.2);
+        }
+
+        #culturalConnections {
+            pointer-events: none;
         }
 
         .coordinates-info {
@@ -419,82 +973,228 @@
                     <text x="315" y="540" class="comuna-label">El Refugio</text>
                     <text x="315" y="555" class="comuna-label" font-size="9">Comuna 19</text>
 
-                    <!-- Comuna 20 - Siloé -->
-                    <ellipse class="neighborhood" cx="120" cy="380" rx="70" ry="55" data-name="Comuna 20 - Siloé" data-comuna="20"/>
-                    <text x="120" y="375" class="comuna-label">Siloé</text>
-                    <text x="120" y="390" class="comuna-label" font-size="9">Comuna 20</text>
+                    <!-- SILOÉ - Comuna 20 (extremo occidental, entre cerros Cristo Rey y Bataclán) -->
+                    <ellipse class="neighborhood" cx="80" cy="350" rx="70" ry="55" data-name="Comuna 20 - Siloé" data-comuna="20"/>
+                    <text x="80" y="345" class="comuna-label">Siloé</text>
+                    <text x="80" y="360" class="comuna-label" font-size="9">Comuna 20</text>
 
-                    <!-- Comuna 22 - Montebello -->
-                    <rect class="neighborhood" x="250" y="580" width="90" height="50" rx="12" data-name="Comuna 22 - Montebello" data-comuna="22"/>
-                    <text x="295" y="600" class="comuna-label">Montebello</text>
-                    <text x="295" y="615" class="comuna-label" font-size="9">Comuna 22</text>
+                    <!-- BARRIO OBRERO - Comuna 9 (centro de la ciudad) -->
+                    <circle class="neighborhood" cx="300" cy="350" r="55" data-name="Comuna 9 - Barrio Obrero" data-comuna="9"/>
+                    <text x="300" y="345" class="comuna-label">Barrio Obrero</text>
+                    <text x="300" y="360" class="comuna-label" font-size="9">Comuna 9</text>
 
-                    <!-- DISTRITO DE AGUABLANCA -->
-                    <!-- Comuna 13 - Marroquín -->
-                    <rect class="neighborhood" x="550" y="350" width="120" height="80" rx="15" data-name="Comuna 13 - Marroquín" data-comuna="13"/>
-                    <text x="610" y="385" class="comuna-label">Marroquín</text>
-                    <text x="610" y="400" class="comuna-label" font-size="9">Comuna 13</text>
+                    <!-- DISTRITO DE AGUABLANCA (extremo oriental - comunas 13, 14, 15, 21) -->
+                    <!-- Comuna 13 - Al suroriente -->
+                    <rect class="neighborhood" x="650" y="400" width="120" height="80" rx="15" data-name="Comuna 13 - Aguablanca" data-comuna="13"/>
+                    <text x="710" y="435" class="comuna-label">Aguablanca</text>
+                    <text x="710" y="450" class="comuna-label" font-size="9">Comuna 13</text>
 
-                    <!-- Comuna 14 - Floralia -->
-                    <ellipse class="neighborhood" cx="700" cy="420" rx="80" ry="60" data-name="Comuna 14 - Floralia" data-comuna="14"/>
-                    <text x="700" y="415" class="comuna-label">Floralia</text>
-                    <text x="700" y="430" class="comuna-label" font-size="9">Comuna 14</text>
+                    <!-- Comuna 14 - Distrito Aguablanca -->
+                    <ellipse class="neighborhood" cx="780" cy="450" rx="80" ry="60" data-name="Comuna 14 - Distrito Aguablanca" data-comuna="14"/>
+                    <text x="780" y="445" class="comuna-label">Floralia</text>
+                    <text x="780" y="460" class="comuna-label" font-size="9">Comuna 14</text>
 
-                    <!-- Comuna 15 - El Retiro -->
-                    <polygon class="neighborhood" points="580,480 670,470 690,540 620,550 560,520" data-name="Comuna 15 - El Retiro" data-comuna="15"/>
-                    <text x="625" y="505" class="comuna-label">El Retiro</text>
-                    <text x="625" y="520" class="comuna-label" font-size="9">Comuna 15</text>
+                    <!-- Comuna 15 - Distrito Aguablanca -->
+                    <polygon class="neighborhood" points="650,500 740,490 760,560 680,570 630,540" data-name="Comuna 15 - Distrito Aguablanca" data-comuna="15"/>
+                    <text x="695" y="525" class="comuna-label">El Retiro</text>
+                    <text x="695" y="540" class="comuna-label" font-size="9">Comuna 15</text>
 
-                    <!-- Comuna 21 - Pichindé -->
-                    <rect class="neighborhood" x="750" y="500" width="100" height="70" rx="15" data-name="Comuna 21 - Pichindé" data-comuna="21"/>
-                    <text x="800" y="530" class="comuna-label">Pichindé</text>
-                    <text x="800" y="545" class="comuna-label" font-size="9">Comuna 21</text>
+                    <!-- Comuna 21 - Distrito Aguablanca -->
+                    <rect class="neighborhood" x="800" y="500" width="100" height="70" rx="15" data-name="Comuna 21 - Distrito Aguablanca" data-comuna="21"/>
+                    <text x="850" y="530" class="comuna-label">Pichindé</text>
+                    <text x="850" y="545" class="comuna-label" font-size="9">Comuna 21</text>
 
-                    <!-- ZONA ORIENTAL -->
-                    <!-- Comuna 11 - Guabal -->
-                    <ellipse class="neighborhood" cx="380" cy="380" rx="60" ry="45" data-name="Comuna 11 - Guabal" data-comuna="11"/>
-                    <text x="380" y="375" class="comuna-label">Guabal</text>
-                    <text x="380" y="390" class="comuna-label" font-size="9">Comuna 11</text>
-
-                    <!-- Puerto Resistencia (Intersección Comunas 10, 11, 16) -->
+                    <!-- PUERTO RESISTENCIA - Intersección real de comunas 10, 11, 16 en Av. Simón Bolívar -->
                     <g id="puertoResistencia" class="puerto-resistencia">
-                        <ellipse class="special-space" cx="450" cy="350" rx="45" ry="30" data-name="Puerto Resistencia"/>
-                        <text x="450" y="340" class="comuna-label" font-size="12" fill="#FF4500">Puerto Resistencia</text>
-                        <text x="450" y="355" class="comuna-label" font-size="9" fill="#FF4500">(Monumento 2021)</text>
-                        <text x="450" y="370" class="comuna-label" font-size="8" fill="#FF4500">Comunas 10-11-16</text>
+                        <ellipse class="special-space" cx="500" cy="420" rx="45" ry="30" data-name="Puerto Resistencia"/>
+                        <text x="500" y="410" class="comuna-label" font-size="12" fill="#FF4500">Puerto Resistencia</text>
+                        <text x="500" y="425" class="comuna-label" font-size="9" fill="#FF4500">(Monumento 2021)</text>
+                        <text x="500" y="440" class="comuna-label" font-size="8" fill="#FF4500">Av. Simón Bolívar</text>
                     </g>
 
-                    <!-- Espacios públicos emblemáticos -->
-                    <!-- Mercado Alameda -->
-                    <rect class="special-space" x="320" y="280" width="35" height="25" rx="5"/>
-                    <text x="337" y="295" fill="#FF8C00" font-size="10" text-anchor="middle" font-weight="bold">Mercado</text>
-                    <text x="337" y="308" fill="#FF8C00" font-size="9" text-anchor="middle">Alameda</text>
+                    <!-- SAN ANTONIO - Comuna 1 (centro histórico) -->
+                    <ellipse class="neighborhood" cx="350" cy="250" rx="70" ry="50" data-name="Comuna 1 - San Antonio" data-comuna="1"/>
+                    <text x="350" y="240" class="comuna-label">San Antonio</text>
+                    <text x="350" y="255" class="comuna-label" font-size="9">Comuna 1</text>
 
-                    <!-- Museo La Tertulia -->
-                    <rect class="special-space" x="280" y="350" width="30" height="30" rx="8"/>
-                    <text x="295" y="368" fill="#9C27B0" font-size="9" text-anchor="middle" font-weight="bold">La Tertulia</text>
+                    <!-- SUCRE - Parte del centro -->
+                    <rect class="neighborhood" x="250" y="280" width="80" height="60" rx="12" data-name="Comuna 9 - Sucre" data-comuna="9"/>
+                    <text x="290" y="305" class="comuna-label">Sucre</text>
+                    <text x="290" y="320" class="comuna-label" font-size="9">Comuna 9</text>
 
-                    <!-- Bulevar del Río -->
-                    <line x1="400" y1="280" x2="580" y2="320" stroke="#4CAF50" stroke-width="8" opacity="0.8"/>
-                    <text x="490" y="295" fill="#4CAF50" font-size="11" text-anchor="middle" font-weight="bold">Bulevar del Río</text>
-
-                    <!-- Universidad del Valle -->
-                    <rect class="special-space" x="380" y="420" width="60" height="40" rx="8"/>
-                    <text x="410" y="435" fill="#673AB7" font-size="10" text-anchor="middle" font-weight="bold">Universidad</text>
-                    <text x="410" y="448" fill="#673AB7" font-size="9" text-anchor="middle">del Valle</text>
-
-                    <!-- Juanchito (zona salsera histórica) -->
-                    <circle class="special-space" cx="720" cy="380" r="25"/>
-                    <text x="720" y="378" fill="#FF5722" font-size="10" text-anchor="middle" font-weight="bold">Juanchito</text>
-                    <text x="720" y="390" fill="#FF5722" font-size="8" text-anchor="middle">(Salsa)</text>
-
-                    <!-- Loma de la Cruz -->
-                    <ellipse class="special-space" cx="100" cy="420" rx="35" ry="25"/>
-                    <text x="100" y="418" fill="#795548" font-size="9" text-anchor="middle" font-weight="bold">Loma de</text>
-                    <text x="100" y="430" fill="#795548" font-size="9" text-anchor="middle" font-weight="bold">la Cruz</text>
+                    <!-- JUANCHITO - Corregimiento al sur -->
+                    <circle class="special-space" cx="600" cy="550" r="35"/>
+                    <text x="600" y="548" fill="#FF5722" font-size="12" text-anchor="middle" font-weight="bold">Juanchito</text>
+                    <text x="600" y="560" fill="#FF5722" font-size="9" text-anchor="middle">(Corregimiento)</text>
 
                     <!-- Puntos culturales dinámicos -->
                     <g id="culturalPoints"></g>
+
+                    <!-- MANIFESTACIONES CULTURALES VISIBLES -->
+                    
+                    <!-- Salsa Caleña - Barrio Obrero -->
+                    <g class="cultural-marker">
+                        <circle cx="180" cy="320" r="12" fill="#FF6B35" stroke="#D84315" stroke-width="3"/>
+                        <text x="180" y="325" text-anchor="middle" fill="white" font-size="10" font-weight="bold">🎵</text>
+                        <rect x="130" y="340" width="100" height="25" rx="12" fill="rgba(255,107,53,0.9)" stroke="#D84315"/>
+                        <text x="180" y="355" text-anchor="middle" fill="white" font-size="11" font-weight="bold">SALSA CALEÑA</text>
+                    </g>
+
+                    <!-- Salsa Caleña - Juanchito -->
+                    <g class="cultural-marker">
+                        <circle cx="720" cy="380" r="12" fill="#FF6B35" stroke="#D84315" stroke-width="3"/>
+                        <text x="720" y="385" text-anchor="middle" fill="white" font-size="10" font-weight="bold">🎵</text>
+                        <rect x="680" y="400" width="80" height="25" rx="12" fill="rgba(255,107,53,0.9)" stroke="#D84315"/>
+                        <text x="720" y="415" text-anchor="middle" fill="white" font-size="11" font-weight="bold">JUANCHITO</text>
+                    </g>
+
+                    <!-- Gastronomía - Mercado Alameda -->
+                    <g class="cultural-marker">
+                        <circle cx="337" cy="295" r="12" fill="#4CAF50" stroke="#2E7D32" stroke-width="3"/>
+                        <text x="337" y="300" text-anchor="middle" fill="white" font-size="10" font-weight="bold">🍲</text>
+                        <rect x="280" y="315" width="114" height="25" rx="12" fill="rgba(76,175,80,0.9)" stroke="#2E7D32"/>
+                        <text x="337" y="330" text-anchor="middle" fill="white" font-size="10" font-weight="bold">GASTRONOMÍA</text>
+                    </g>
+
+                    <!-- Artesanías - Loma de la Cruz -->
+                    <g class="cultural-marker">
+                        <circle cx="100" cy="420" r="12" fill="#9C27B0" stroke="#6A1B9A" stroke-width="3"/>
+                        <text x="100" y="425" text-anchor="middle" fill="white" font-size="10" font-weight="bold">🎨</text>
+                        <rect x="50" y="440" width="100" height="25" rx="12" fill="rgba(156,39,176,0.9)" stroke="#6A1B9A"/>
+                        <text x="100" y="455" text-anchor="middle" fill="white" font-size="10" font-weight="bold">ARTESANÍAS</text>
+                    </g>
+
+                    <!-- Artesanías - Aguablanca -->
+                    <g class="cultural-marker">
+                        <circle cx="610" cy="390" r="12" fill="#9C27B0" stroke="#6A1B9A" stroke-width="3"/>
+                        <text x="610" y="395" text-anchor="middle" fill="white" font-size="10" font-weight="bold">🎨</text>
+                        <rect x="545" y="410" width="130" height="25" rx="12" fill="rgba(156,39,176,0.9)" stroke="#6A1B9A"/>
+                        <text x="610" y="425" text-anchor="middle" fill="white" font-size="9" font-weight="bold">ARTESANÍAS PACÍFICO</text>
+                    </g>
+
+                    <!-- Murales de Resistencia - Puerto Resistencia -->
+                    <g class="cultural-marker">
+                        <circle cx="450" cy="380" r="14" fill="#E91E63" stroke="#AD1457" stroke-width="3"/>
+                        <text x="450" y="385" text-anchor="middle" fill="white" font-size="12" font-weight="bold">✊</text>
+                        <rect x="380" y="400" width="140" height="25" rx="12" fill="rgba(233,30,99,0.95)" stroke="#AD1457"/>
+                        <text x="450" y="415" text-anchor="middle" fill="white" font-size="10" font-weight="bold">MURALES RESISTENCIA</text>
+                    </g>
+
+                    <!-- Murales - Siloé -->
+                    <g class="cultural-marker">
+                        <circle cx="120" cy="350" r="12" fill="#E91E63" stroke="#AD1457" stroke-width="3"/>
+                        <text x="120" y="355" text-anchor="middle" fill="white" font-size="10" font-weight="bold">🎨</text>
+                        <rect x="70" y="300" width="100" height="25" rx="12" fill="rgba(233,30,99,0.9)" stroke="#AD1457"/>
+                        <text x="120" y="315" text-anchor="middle" fill="white" font-size="10" font-weight="bold">ARTE URBANO</text>
+                    </g>
+
+                    <!-- Festividades Religiosas - San Antonio -->
+                    <g class="cultural-marker">
+                        <circle cx="250" cy="200" r="12" fill="#FF9800" stroke="#F57C00" stroke-width="3"/>
+                        <text x="250" y="205" text-anchor="middle" fill="white" font-size="10" font-weight="bold">⛪</text>
+                        <rect x="185" y="180" width="130" height="25" rx="12" fill="rgba(255,152,0,0.9)" stroke="#F57C00"/>
+                        <text x="250" y="195" text-anchor="middle" fill="white" font-size="10" font-weight="bold">FIESTAS RELIGIOSAS</text>
+                    </g>
+
+                    <!-- Feria de Cali - Universidad del Valle -->
+                    <g class="cultural-marker">
+                        <circle cx="410" cy="440" r="12" fill="#F44336" stroke="#C62828" stroke-width="3"/>
+                        <text x="410" y="445" text-anchor="middle" fill="white" font-size="10" font-weight="bold">🎉</text>
+                        <rect x="355" y="460" width="110" height="25" rx="12" fill="rgba(244,67,54,0.9)" stroke="#C62828"/>
+                        <text x="410" y="475" text-anchor="middle" fill="white" font-size="10" font-weight="bold">FERIA DE CALI</text>
+                    </g>
+
+                    <!-- PORTADORES DEL SABER -->
+
+                    <!-- Músicos Salseros - Obrero -->
+                    <g class="actor-marker">
+                        <rect x="160" y="340" width="16" height="16" rx="3" fill="#2196F3" stroke="#1565C0" stroke-width="2"/>
+                        <text x="168" y="350" text-anchor="middle" fill="white" font-size="8" font-weight="bold">♪</text>
+                        <text x="168" y="365" text-anchor="middle" fill="#1565C0" font-size="8" font-weight="bold">Músicos</text>
+                    </g>
+
+                    <!-- Cocineras - Mercado Alameda -->
+                    <g class="actor-marker">
+                        <rect x="355" y="295" width="16" height="16" rx="3" fill="#2196F3" stroke="#1565C0" stroke-width="2"/>
+                        <text x="363" y="305" text-anchor="middle" fill="white" font-size="8" font-weight="bold">👩</text>
+                        <text x="363" y="320" text-anchor="middle" fill="#1565C0" font-size="8" font-weight="bold">Cocineras</text>
+                    </g>
+
+                    <!-- Artistas Urbanos - Puerto Resistencia -->
+                    <g class="actor-marker">
+                        <rect x="475" y="380" width="16" height="16" rx="3" fill="#2196F3" stroke="#1565C0" stroke-width="2"/>
+                        <text x="483" y="390" text-anchor="middle" fill="white" font-size="8" font-weight="bold">🎨</text>
+                        <text x="483" y="405" text-anchor="middle" fill="#1565C0" font-size="8" font-weight="bold">Artistas</text>
+                    </g>
+
+                    <!-- Sabedores Afropacíficos - Aguablanca -->
+                    <g class="actor-marker">
+                        <rect x="635" y="410" width="16" height="16" rx="3" fill="#2196F3" stroke="#1565C0" stroke-width="2"/>
+                        <text x="643" y="420" text-anchor="middle" fill="white" font-size="8" font-weight="bold">🌿</text>
+                        <text x="643" y="435" text-anchor="middle" fill="#1565C0" font-size="8" font-weight="bold">Sabedores</text>
+                    </g>
+
+                    <!-- Líderes Comunitarios - Siloé -->
+                    <g class="actor-marker">
+                        <rect x="95" y="360" width="16" height="16" rx="3" fill="#2196F3" stroke="#1565C0" stroke-width="2"/>
+                        <text x="103" y="370" text-anchor="middle" fill="white" font-size="8" font-weight="bold">✊</text>
+                        <text x="103" y="385" text-anchor="middle" fill="#1565C0" font-size="8" font-weight="bold">Líderes</text>
+                    </g>
+
+                    <!-- AMENAZAS -->
+
+                    <!-- Gentrificación - San Antonio -->
+                    <g class="threat-marker">
+                        <polygon points="230,200 220,215 240,215" fill="#FF5722" stroke="#D84315" stroke-width="2"/>
+                        <text x="230" y="210" text-anchor="middle" fill="white" font-size="8" font-weight="bold">⚠️</text>
+                        <text x="230" y="230" text-anchor="middle" fill="#D84315" font-size="8" font-weight="bold">Gentrificación</text>
+                    </g>
+
+                    <!-- Estigmatización - Puerto Resistencia -->
+                    <g class="threat-marker">
+                        <polygon points="470,360 460,375 480,375" fill="#FF5722" stroke="#D84315" stroke-width="2"/>
+                        <text x="470" y="370" text-anchor="middle" fill="white" font-size="8" font-weight="bold">🚫</text>
+                        <text x="470" y="390" text-anchor="middle" fill="#D84315" font-size="8" font-weight="bold">Estigma</text>
+                    </g>
+
+                    <!-- Violencia - Aguablanca -->
+                    <g class="threat-marker">
+                        <polygon points="590,410 580,425 600,425" fill="#FF5722" stroke="#D84315" stroke-width="2"/>
+                        <text x="590" y="420" text-anchor="middle" fill="white" font-size="8" font-weight="bold">💥</text>
+                        <text x="590" y="440" text-anchor="middle" fill="#D84315" font-size="8" font-weight="bold">Violencia</text>
+                    </g>
+
+                    <!-- Pérdida Generacional - Obrero -->
+                    <g class="threat-marker">
+                        <polygon points="200,340 190,355 210,355" fill="#FF5722" stroke="#D84315" stroke-width="2"/>
+                        <text x="200" y="350" text-anchor="middle" fill="white" font-size="8" font-weight="bold">📱</text>
+                        <text x="200" y="370" text-anchor="middle" fill="#D84315" font-size="7" font-weight="bold">Pérdida Gen.</text>
+                    </g>
+
+                    <!-- ESPACIOS DE MEMORIA -->
+
+                    <!-- Puerto Resistencia (destacado especial) -->
+                    <g class="memory-marker">
+                        <polygon points="450,340 465,350 465,365 450,375 435,365 435,350" fill="#FFD700" stroke="#FFA000" stroke-width="3"/>
+                        <text x="450" y="360" text-anchor="middle" fill="#E65100" font-size="12" font-weight="bold">🏛️</text>
+                        <rect x="385" y="320" width="130" height="20" rx="10" fill="rgba(255,215,0,0.95)" stroke="#FFA000"/>
+                        <text x="450" y="333" text-anchor="middle" fill="#E65100" font-size="9" font-weight="bold">ESPACIO DE MEMORIA 2021</text>
+                    </g>
+
+                    <!-- Conexiones culturales -->
+                    <g id="culturalConnections" opacity="0.6">
+                        <!-- Conexión salsa: Obrero - Juanchito -->
+                        <line x1="180" y1="320" x2="720" y2="380" stroke="#FF6B35" stroke-width="3" stroke-dasharray="8,4"/>
+                        <text x="450" y="350" text-anchor="middle" fill="#FF6B35" font-size="9" transform="rotate(-8 450 350)">Ruta de la Salsa</text>
+
+                        <!-- Conexión artesanías: Loma de la Cruz - Aguablanca -->
+                        <line x1="100" y1="420" x2="610" y2="390" stroke="#9C27B0" stroke-width="3" stroke-dasharray="8,4"/>
+                        <text x="355" y="405" text-anchor="middle" fill="#9C27B0" font-size="9">Red Artesanal Afropacífica</text>
+
+                        <!-- Conexión resistencia: Siloé - Puerto Resistencia -->
+                        <line x1="120" y1="380" x2="450" y2="350" stroke="#E91E63" stroke-width="3" stroke-dasharray="8,4"/>
+                        <text x="285" y="365" text-anchor="middle" fill="#E91E63" font-size="9">Territorios de Resistencia</text>
+                    </g>
 
                     <!-- Información geográfica -->
                     <text x="850" y="650" fill="#666" font-size="10">3°27'N, 76°32'W</text>
@@ -558,4 +1258,547 @@
                     </div>
                     <div class="manifestation-item actor-item" data-type="actor">
                         <strong>Sabedores Afropacíficos</strong>
-                        <div style="font-size: 0.85em; margin-top: 6px;">🌿
+                        <div style="font-size: 0.85em; margin-top: 6px;">🌿 Portadores de conocimientos ancestrales</div>
+                    </div>
+                    <div class="manifestation-item actor-item" data-type="actor">
+                        <strong>Líderes Comunitarios</strong>
+                        <div style="font-size: 0.85em; margin-top: 6px;">✊ Organizadores sociales y culturales</div>
+                    </div>
+                </div>
+
+                <div class="control-section">
+                    <h3>🏛️ Espacios de Memoria</h3>
+                    <div class="manifestation-item space-item" data-type="space">
+                        <strong>Puerto Resistencia</strong>
+                        <div style="font-size: 0.85em; margin-top: 6px;">🏛️ Resignificado en estallido social 2021</div>
+                    </div>
+                    <div class="manifestation-item space-item" data-type="space">
+                        <strong>Siloé - Territorio de Resistencia</strong>
+                        <div style="font-size: 0.85em; margin-top: 6px;">🏘️ Cultura popular y resistencia</div>
+                    </div>
+                    <div class="manifestation-item space-item" data-type="space">
+                        <strong>Distrito de Aguablanca</strong>
+                        <div style="font-size: 0.85em; margin-top: 6px;">🌍 Identidad afrodescendiente</div>
+                    </div>
+                    <div class="manifestation-item space-item" data-type="space">
+                        <strong>Juanchito Salsero</strong>
+                        <div style="font-size: 0.85em; margin-top: 6px;">🎶 Cuna histórica de la salsa caleña</div>
+                    </div>
+                </div>
+
+                <div class="control-section">
+                    <h3>⚠️ Amenazas Identificadas</h3>
+                    <div class="manifestation-item threat-item" data-type="threat">
+                        <strong>Gentrificación</strong>
+                        <div style="font-size: 0.85em; margin-top: 6px;">🏗️ Desplazamiento en centros históricos</div>
+                    </div>
+                    <div class="manifestation-item threat-item" data-type="threat">
+                        <strong>Estigmatización Territorial</strong>
+                        <div style="font-size: 0.85em; margin-top: 6px;">🚫 Criminalización de espacios culturales</div>
+                    </div>
+                    <div class="manifestation-item threat-item" data-type="threat">
+                        <strong>Pérdida Generacional</strong>
+                        <div style="font-size: 0.85em; margin-top: 6px;">📱 Desinterés de nuevas generaciones</div>
+                    </div>
+                    <div class="manifestation-item threat-item" data-type="threat">
+                        <strong>Falta de Políticas Culturales</strong>
+                        <div style="font-size: 0.85em; margin-top: 6px;">📜 Ausencia de protección institucional</div>
+                    </div>
+                    <div class="manifestation-item threat-item" data-type="threat">
+                        <strong>Violencia Urbana</strong>
+                        <div style="font-size: 0.85em; margin-top: 6px;">💥 Afectación de espacios culturales</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="legend">
+            <h3>🗝️ Leyenda Simbólica Cultural</h3>
+            <div class="legend-grid">
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #228B22;"></div>
+                    <span><strong>Manifestaciones Culturales</strong> (Círculos verdes)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #1976d2;"></div>
+                    <span><strong>Portadores del Saber</strong> (Cuadrados azules)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #d32f2f;"></div>
+                    <span><strong>Amenazas</strong> (Triángulos rojos)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #7b1fa2;"></div>
+                    <span><strong>Espacios de Memoria</strong> (Hexágonos morados)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #FFD700;"></div>
+                    <span><strong>Espacios Públicos</strong> (Elementos dorados)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #1e88e5;"></div>
+                    <span><strong>Río Cauca</strong> (Elemento estructurante)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #8d6e63;"></div>
+                    <span><strong>Farallones de Cali</strong> (Cordillera Occidental)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #FF4500;"></div>
+                    <span><strong>Puerto Resistencia</strong> (Símbolo estallido 2021)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3 style="color: #2E8B57; margin-bottom: 25px; text-align: center; font-size: 1.5em;">📋 Guía Metodológica de Uso</h3>
+            
+            <div class="step">
+                <h4>1️⃣ Explorar la Geografía Cultural</h4>
+                <p>Haz clic en las 22 comunas del mapa para descubrir sus características culturales. El mapa respeta la división administrativa real de Cali, con el río Cauca al oriente y los Farallones al occidente.</p>
+            </div>
+
+            <div class="step">
+                <h4>2️⃣ Identificar Manifestaciones por Clasificación Ministerial</h4>
+                <p>Cada manifestación está clasificada según el Ministerio de Cultura de Colombia: Artes, Cultura culinaria, Producción tradicional, Patrimonio Cultural Inmaterial, Eventos religiosos, y Actos festivos.</p>
+            </div>
+
+            <div class="step">
+                <h4>3️⃣ Reconocer Portadores del Saber</h4>
+                <p>Los portadores son las personas y comunidades que mantienen vivas las tradiciones: músicos salseros, cocineras tradicionales, artistas urbanos, sabedores afropacíficos y líderes comunitarios.</p>
+            </div>
+
+            <div class="step">
+                <h4>4️⃣ Analizar Espacios de Memoria Post-2021</h4>
+                <p>Puerto Resistencia aparece destacado como el espacio resignificado durante el estallido social de 2021, ubicado en la intersección real de las comunas 10, 11 y 16, sobre la Avenida Simón Bolívar.</p>
+            </div>
+
+            <div class="step">
+                <h4>5️⃣ Evaluar Amenazas y Riesgos</h4>
+                <p>Las amenazas mapeadas incluyen gentrificación, estigmatización territorial, pérdida generacional, falta de políticas culturales y violencia urbana que afectan la preservación cultural.</p>
+            </div>
+
+            <div class="step">
+                <h4>6️⃣ Comprender las Conexiones Territoriales</h4>
+                <p>Observa cómo las manifestaciones culturales se distribuyen geográficamente: desde el centro histórico (San Antonio) hasta el oriente (Aguablanca), pasando por los territorios de ladera (Siloé).</p>
+            </div>
+
+            <div class="step">
+                <h4>7️⃣ Aplicar la Metodología Comunitaria</h4>
+                <p>Esta cartografía puede replicarse en otras comunas o barrios específicos, profundizando en las manifestaciones locales y siguiendo la metodología de inventarios de Patrimonio Cultural Inmaterial.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Datos georreferenciados de manifestaciones culturales de Cali
+        const culturalDataCali = {
+            manifestations: [
+                {
+                    name: "Salsa Caleña",
+                    locations: [
+                        {x: 180, y: 320, zona: "Barrio Obrero"}, 
+                        {x: 720, y: 380, zona: "Juanchito"}, 
+                        {x: 170, y: 530, zona: "Meléndez"}
+                    ],
+                    classification: "Artes - Música y Danza",
+                    description: "Expresión musical y dancística emblemática de Cali, reconocida mundialmente",
+                    riesgo: "Pérdida de espacios tradicionales de práctica"
+                },
+                {
+                    name: "Gastronomía Vallecaucana",
+                    locations: [
+                        {x: 337, y: 295, zona: "Mercado Alameda"}, 
+                        {x: 200, y: 450, zona: "Plaza La Merced"}
+                    ],
+                    classification: "Cultura culinaria",
+                    description: "Tradiciones gastronómicas del Valle del Cauca: sancocho, aborrajados, chuleta valluna",
+                    riesgo: "Homogenización alimentaria global"
+                },
+                {
+                    name: "Artesanías Afropacíficas",
+                    locations: [
+                        {x: 100, y: 420, zona: "Loma de la Cruz"}, 
+                        {x: 610, y: 390, zona: "Distrito Aguablanca"}, 
+                        {x: 700, y: 420, zona: "Floralia"}
+                    ],
+                    classification: "Producción tradicional y propia",
+                    description: "Técnicas ancestrales de comunidades afrodescendientes: tejidos, cestería, talla",
+                    riesgo: "Competencia de productos industriales"
+                },
+                {
+                    name: "Murales de Resistencia",
+                    locations: [
+                        {x: 450, y: 350, zona: "Puerto Resistencia"}, 
+                        {x: 120, y: 380, zona: "Siloé"}, 
+                        {x: 350, y: 480, zona: "Ciudad Córdoba"}
+                    ],
+                    classification: "PCI asociado a espacios culturales",
+                    description: "Arte urbano surgido del estallido social 2021, nuevo patrimonio cultural",
+                    riesgo: "Borrado institucional y estigmatización"
+                },
+                {
+                    name: "Festividades Religiosas",
+                    locations: [
+                        {x: 250, y: 220, zona: "San Antonio"}, 
+                        {x: 345, y: 205, zona: "Santa Rosa"}
+                    ],
+                    classification: "Eventos religiosos tradicionales de carácter colectivo",
+                    description: "Celebraciones católicas y sincréticas tradicionales",
+                    riesgo: "Secularización urbana"
+                },
+                {
+                    name: "Feria de Cali",
+                    locations: [
+                        {x: 410, y: 440, zona: "Universidad del Valle"}, 
+                        {x: 295, y: 365, zona: "Centro"}
+                    ],
+                    classification: "Actos festivos y lúdicos",
+                    description: "Máxima expresión festiva caleña (diciembre-enero)",
+                    riesgo: "Comercialización excesiva"
+                }
+            ],
+            actors: [
+                {
+                    name: "Músicos Salseros",
+                    locations: [
+                        {x: 180, y: 320, zona: "Barrio Obrero"}, 
+                        {x: 720, y: 380, zona: "Juanchito"}
+                    ],
+                    description: "Guardianes de la tradición salsera caleña, creadores y transmisores"
+                },
+                {
+                    name: "Cocineras Tradicionales",
+                    locations: [
+                        {x: 337, y: 295, zona: "Mercado Alameda"}
+                    ],
+                    description: "Preservadoras de recetas ancestrales vallecaucanas"
+                },
+                {
+                    name: "Artistas Urbanos",
+                    locations: [
+                        {x: 450, y: 350, zona: "Puerto Resistencia"}, 
+                        {x: 120, y: 380, zona: "Siloé"}
+                    ],
+                    description: "Creadores de nuevas expresiones culturales post-estallido 2021"
+                },
+                {
+                    name: "Sabedores Afropacíficos",
+                    locations: [
+                        {x: 610, y: 390, zona: "Distrito Aguablanca"}, 
+                        {x: 700, y: 420, zona: "Floralia"}
+                    ],
+                    description: "Portadores de conocimientos ancestrales del Pacífico colombiano"
+                },
+                {
+                    name: "Líderes Comunitarios",
+                    locations: [
+                        {x: 450, y: 350, zona: "Puerto Resistencia"}, 
+                        {x: 120, y: 380, zona: "Siloé"}, 
+                        {x: 610, y: 390, zona: "Aguablanca"}
+                    ],
+                    description: "Organizadores sociales y culturales de los territorios"
+                }
+            ],
+            threats: [
+                {
+                    name: "Gentrificación",
+                    locations: [
+                        {x: 250, y: 220, zona: "San Antonio"}, 
+                        {x: 295, y: 365, zona: "Centro histórico"}
+                    ],
+                    description: "Desplazamiento de comunidades tradicionales por desarrollo urbano"
+                },
+                {
+                    name: "Estigmatización Territorial",
+                    locations: [
+                        {x: 450, y: 350, zona: "Puerto Resistencia"}, 
+                        {x: 120, y: 380, zona: "Siloé"}, 
+                        {x: 610, y: 390, zona: "Aguablanca"}
+                    ],
+                    description: "Criminalización de espacios culturales populares"
+                },
+                {
+                    name: "Pérdida Generacional",
+                    locations: [
+                        {x: 180, y: 320, zona: "Barrio Obrero"}, 
+                        {x: 337, y: 295, zona: "Mercado Alameda"}
+                    ],
+                    description: "Desinterés de jóvenes en tradiciones culturales"
+                },
+                {
+                    name: "Violencia Urbana",
+                    locations: [
+                        {x: 610, y: 390, zona: "Aguablanca"}, 
+                        {x: 350, y: 480, zona: "Ciudad Córdoba"}
+                    ],
+                    description: "Afectación de espacios y práticas culturales por violencia"
+                }
+            ],
+            memorySpaces: [
+                {
+                    name: "Puerto Resistencia",
+                    location: {x: 450, y: 350},
+                    description: "Espacio resignificado durante estallido social 2021, símbolo de resistencia",
+                    year: "2021"
+                },
+                {
+                    name: "Siloé - Territorio de Resistencia",
+                    location: {x: 120, y: 380},
+                    description: "Histórico territorio de cultura popular y resistencia urbana"
+                },
+                {
+                    name: "Distrito de Aguablanca",
+                    location: {x: 650, y: 420},
+                    description: "Concentración de población afrodescendiente y cultura del Pacífico"
+                },
+                {
+                    name: "Juanchito Salsero",
+                    location: {x: 720, y: 380},
+                    description: "Cuna histórica de la salsa caleña desde los años 60-70"
+                }
+            ]
+        };
+
+        // Función para agregar todos los elementos culturales al mapa
+        function addAllCulturalElements() {
+            const culturalPointsGroup = document.getElementById('culturalPoints');
+            culturalPointsGroup.innerHTML = '';
+
+            // Agregar manifestaciones culturales (círculos verdes)
+            culturalDataCali.manifestations.forEach((manifestation, index) => {
+                manifestation.locations.forEach((location, locIndex) => {
+                    const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                    circle.setAttribute('cx', location.x);
+                    circle.setAttribute('cy', location.y);
+                    circle.setAttribute('r', '10');
+                    circle.setAttribute('fill', '#228B22');
+                    circle.setAttribute('stroke', '#1B5E20');
+                    circle.setAttribute('stroke-width', '3');
+                    circle.classList.add('cultural-point');
+                    circle.setAttribute('data-type', 'manifestation');
+                    circle.setAttribute('data-name', manifestation.name);
+                    circle.setAttribute('data-zone', location.zona);
+                    
+                    circle.addEventListener('click', () => {
+                        showDetailedInfo(manifestation, 'manifestation', location.zona);
+                    });
+                    
+                    culturalPointsGroup.appendChild(circle);
+                });
+            });
+
+            // Agregar actores/portadores (cuadrados azules)
+            culturalDataCali.actors.forEach((actor, index) => {
+                actor.locations.forEach((location, locIndex) => {
+                    const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+                    rect.setAttribute('x', location.x - 8);
+                    rect.setAttribute('y', location.y - 8);
+                    rect.setAttribute('width', '16');
+                    rect.setAttribute('height', '16');
+                    rect.setAttribute('fill', '#1976d2');
+                    rect.setAttribute('stroke', '#0D47A1');
+                    rect.setAttribute('stroke-width', '2');
+                    rect.classList.add('cultural-point');
+                    rect.setAttribute('data-type', 'actor');
+                    rect.setAttribute('data-name', actor.name);
+                    rect.setAttribute('data-zone', location.zona);
+                    
+                    rect.addEventListener('click', () => {
+                        showDetailedInfo(actor, 'actor', location.zona);
+                    });
+                    
+                    culturalPointsGroup.appendChild(rect);
+                });
+            });
+
+            // Agregar amenazas (triángulos rojos)
+            culturalDataCali.threats.forEach((threat, index) => {
+                threat.locations.forEach((location, locIndex) => {
+                    const triangle = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+                    triangle.setAttribute('points', `${location.x},${location.y-10} ${location.x-9},${location.y+7} ${location.x+9},${location.y+7}`);
+                    triangle.setAttribute('fill', '#d32f2f');
+                    triangle.setAttribute('stroke', '#B71C1C');
+                    triangle.setAttribute('stroke-width', '2');
+                    triangle.classList.add('cultural-point');
+                    triangle.setAttribute('data-type', 'threat');
+                    triangle.setAttribute('data-name', threat.name);
+                    triangle.setAttribute('data-zone', location.zona);
+                    
+                    triangle.addEventListener('click', () => {
+                        showDetailedInfo(threat, 'threat', location.zona);
+                    });
+                    
+                    culturalPointsGroup.appendChild(triangle);
+                });
+            });
+
+            // Agregar espacios de memoria (hexágonos morados)
+            culturalDataCali.memorySpaces.forEach((space, index) => {
+                const hexagon = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+                const points = [];
+                for (let i = 0; i < 6; i++) {
+                    const angle = (i * 60) * Math.PI / 180;
+                    const x = space.location.x + 12 * Math.cos(angle);
+                    const y = space.location.y + 12 * Math.sin(angle);
+                    points.push(`${x},${y}`);
+                }
+                hexagon.setAttribute('points', points.join(' '));
+                hexagon.setAttribute('fill', '#7b1fa2');
+                hexagon.setAttribute('stroke', '#4A148C');
+                hexagon.setAttribute('stroke-width', '2');
+                hexagon.classList.add('cultural-point');
+                hexagon.setAttribute('data-type', 'memory');
+                hexagon.setAttribute('data-name', space.name);
+                
+                hexagon.addEventListener('click', () => {
+                    showDetailedInfo(space, 'memory');
+                });
+                
+                culturalPointsGroup.appendChild(hexagon);
+            });
+        }
+
+        // Función mejorada para mostrar información detallada
+        function showDetailedInfo(item, type, zone = '') {
+            const typeNames = {
+                'manifestation': '🎭 Manifestación Cultural',
+                'actor': '👥 Portador del Saber',
+                'threat': '⚠️ Amenaza',
+                'memory': '🏛️ Espacio de Memoria'
+            };
+
+            let info = `${typeNames[type]}\n\n📍 ${item.name}`;
+            
+            if (zone) info += `\n🗺️ Ubicación: ${zone}`;
+            if (item.classification) info += `\n📋 Clasificación: ${item.classification}`;
+            if (item.description) info += `\n\n📝 ${item.description}`;
+            if (item.riesgo) info += `\n\n⚠️ Riesgo: ${item.riesgo}`;
+            if (item.year) info += `\n📅 Año: ${item.year}`;
+
+            alert(info);
+        }
+
+        // Función para resaltar elementos por tipo
+        function highlightByType(type) {
+            const points = document.querySelectorAll('.cultural-point');
+            points.forEach(point => {
+                if (point.getAttribute('data-type') === type) {
+                    point.style.filter = 'drop-shadow(0 0 15px #FFD700) brightness(1.3)';
+                    point.style.transform = 'scale(1.2)';
+                } else {
+                    point.style.filter = 'brightness(0.5)';
+                    point.style.transform = 'scale(0.8)';
+                }
+            });
+        }
+
+        // Función para limpiar todos los filtros
+        function clearAllFilters() {
+            const points = document.querySelectorAll('.cultural-point');
+            points.forEach(point => {
+                point.style.filter = 'drop-shadow(2px 2px 4px rgba(0,0,0,0.3))';
+                point.style.transform = 'scale(1)';
+            });
+
+            const items = document.querySelectorAll('.manifestation-item');
+            items.forEach(item => {
+                item.classList.remove('active');
+            });
+        }
+
+        // Inicialización cuando se carga la página
+        document.addEventListener('DOMContentLoaded', function() {
+            addAllCulturalElements();
+
+            // Eventos para elementos del panel de control
+            const manifestationItems = document.querySelectorAll('.manifestation-item');
+            manifestationItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const type = this.getAttribute('data-type');
+                    
+                    // Limpiar estados activos
+                    manifestationItems.forEach(el => el.classList.remove('active'));
+                    
+                    // Activar elemento clicado
+                    this.classList.add('active');
+                    
+                    // Resaltar elementos relacionados
+                    if (type) {
+                        highlightByType(type);
+                    }
+                });
+            });
+
+            // Eventos para barrios/comunas
+            const neighborhoods = document.querySelectorAll('.neighborhood');
+            neighborhoods.forEach(neighborhood => {
+                neighborhood.addEventListener('click', function() {
+                    const name = this.getAttribute('data-name');
+                    const comuna = this.getAttribute('data-comuna');
+                    
+                    let description = '';
+                    switch(comuna) {
+                        case '1':
+                            description = 'Centro histórico de Cali, concentra patrimonio arquitectónico y religioso';
+                            break;
+                        case '2':
+                            description = 'Cuna de la salsa caleña, tradición musical y cultural obrera';
+                            break;
+                        case '13':
+                        case '14':
+                        case '15':
+                        case '21':
+                            description = 'Distrito de Aguablanca, concentración de población afrodescendiente del Pacífico';
+                            break;
+                        case '20':
+                            description = 'Territorio de ladera, resistencia popular y cultura comunitaria';
+                            break;
+                        default:
+                            description = 'Territorio con manifestaciones culturales propias de Cali';
+                    }
+                    
+                    alert(`${name}\n\n📍 ${description}\n\n🏛️ Un territorio con rica historia cultural que define la identidad caleña.`);
+                });
+            });
+
+            // Botón para limpiar filtros
+            const controlsPanel = document.querySelector('.controls-panel');
+            const clearButton = document.createElement('button');
+            clearButton.innerHTML = '🔄 Limpiar Todos los Filtros';
+            clearButton.style.cssText = `
+                width: 100%;
+                padding: 15px;
+                background: linear-gradient(135deg, #2E8B57, #228B22);
+                color: white;
+                border: none;
+                border-radius: 12px;
+                font-size: 14px;
+                font-weight: bold;
+                cursor: pointer;
+                margin-top: 20px;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            `;
+            
+            clearButton.addEventListener('click', clearAllFilters);
+            clearButton.addEventListener('mouseover', function() {
+                this.style.background = 'linear-gradient(135deg, #32CD32, #228B22)';
+                this.style.transform = 'scale(1.05)';
+            });
+            clearButton.addEventListener('mouseout', function() {
+                this.style.background = 'linear-gradient(135deg, #2E8B57, #228B22)';
+                this.style.transform = 'scale(1)';
+            });
+            
+            controlsPanel.appendChild(clearButton);
+
+            // Información especial para Puerto Resistencia
+            const puertoResistencia = document.getElementById('puertoResistencia');
+            puertoResistencia.addEventListener('click', function() {
+                alert(`🏛️ PUERTO RESISTENCIA\n\n📍 Ubicación: Intersección Comunas 10, 11 y 16\n🗺️ Avenida Simón Bolívar\n\n📅 Resignificado: Estallido Social 2021\n🎨 Monumento a la Resistencia construido comunitariamente\n\n📜 En proceso de declaratoria como Bien de Interés Cultural\n✊ Símbolo de resistencia y organización popular\n\n🌟 Antes conocido como "Puerto Rellena", transformado en espacio de memoria colectiva durante 16 días de movilización social.`);
+            });
+        });
+    </script>
+</body>
+</html>
